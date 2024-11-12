@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-// import './RainGrid.css';
 
 const RainbowGrid = () => {
-  const rows = 15; // Number of rows
-  const cols = 20; // Number of columns
+  const rows = 15;
+  const cols = 20;
   const [grid, setGrid] = useState(
     Array.from({ length: rows }, () =>
       Array.from({ length: cols }, () => randomColor())
